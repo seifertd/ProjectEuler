@@ -1,5 +1,3 @@
-sum = []
-carries = [0]
 nums = []
 DATA.each_line do |line|
   line.chomp!
@@ -9,6 +7,8 @@ end
 ndigits = nums.first.size
 puts "Read #{nums.size} numbers, digits = #{ndigits}"
 
+sum = []
+carries = [0]
 ndigits.times do |place|
   acc = carries[place]
   nums.each do |num|
